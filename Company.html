@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Landing Page</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css"
+    </head>
+  <body bgcolor="blue">
+      <style>
+           body 
+            {
+               font-family: 'Open Sans', sans-serif;
+              margin: 0;
+              padding: 0;
+              color: #000000;
+            }
+
+header
+            {
+              background-color: rgb(51, 51, 51);
+             color: #fff;
+             display: flex;
+              justify-content: space-between;
+             align-items: center;
+             padding: 20px;
+            }
+
+nav ul 
+            {
+              list-style: none;
+               margin: 0;
+               padding: 0;
+               display: flex;
+            }
+
+nav ul li 
+            {
+               margin-right: 20px;
+            }
+
+nav ul li a 
+           {
+               color: #fff;
+                text-decoration: none;
+                padding: 10px;
+            {
+nav ul li.active a 
+            {
+              background-color: #fff;
+               color: #333;
+               border-radius: 5px;
+            }
+
+.login-btn
+            {
+               background-color: #fff;
+                color: #333;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+
+.signup-btn
+            {
+              background-color: #333;
+               color: #fff;
+               border: none;
+               border-radius: 5px;
+               padding: 10px 20px;
+                cursor: pointer;
+            }
+
+section  
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+.content 
+            {
+               max-width: 800px;
+               text-align: center;
+            }
+
+.modal 
+           {
+               display: none;
+                position: fixed;
+               z-index: 1;
+               left: 0;
+                top: 0;
+              width: 100%;
+              height: 100%;
+              overflow: auto;
+              background-color: rgba(0,0,0,0.4);
+            }
+
+.modal-content 
+            {
+               background-color: #fff;
+                margin: 15% auto;
+                padding: 20px;
+              border: 1px solid #888;
+              width: 80%;
+              max-width: 500px;
+            }
+
+.close  
+            {
+               color: #aaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+
+.close:hover,
+.close:focus 
+            {
+               color: #000;
+               text-decoration: none;
+                cursor: pointer;
+            }
+
+.embed
+            {
+               display: none;
+               position: fixed;
+             z-index: 1;
+              left: 0;
+              top: 0;
+             width: 100%;
+              height: 100%;
+               overflow: auto;
+              background-color: rgba(0,0,0,0.4);
+            }
+
+.embed h2 
+           {
+             text-align: center;
+             margin-top: 50px;
+            }
+
+.embed form
+            {
+              max-width: 500px;
+             margin: 0 auto;
+              padding: 20px;
+             background-color: #fff;
+            }
+
+.embed label 
+            {
+              display: block;
+              margin-bottom: 10px;
+             }
+
+.embed input[type="email"],
+.embed input[type="password"],
+.embed input[type="text"],
+.embed textarea 
+            {
+               width: 100%;
+              padding: 10px;
+             margin-bottom: 20px;
+             border: 1px solid #ccc;
+             border-radius: 5px;
+            }
+
+.embed button 
+           {
+              background-color: #333;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+             padding: 10px 20px;
+             cursor: pointer;
+            }
+
+.embed button[type="submit"]
+           {
+             margin-top: 20px;
+            }
+
+@media screen and (max-width: 768px) 
+            {
+  nav ul   
+                {
+                 flex-direction: row;
+                 align-items: center;
+                }
+
+  nav ul li 
+                { 
+                margin-right: 0;
+                margin-bottom: 10px;
+                }
+            }
+        </style>
+       <header>
+          <h1>Best Choice Website Services </h1>
+            <nav>
+               <ul>
+                 <li class="active"><a href="#home">Home</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+               </ul>
+                <button class="login-btn" onclick="openLoginForm()">Log In</button>
+            </nav>
+        </header>
+
+       <main>
+          <section id="home" class="section" style="background-color: #f2f2f2;">
+               <div class="content">
+                  <h2>Best Choice Website Services</h2>
+                  <p>Best choice is a website that offers you with the best website services. We guarantee customers for a high quality services . Register with us and send us a request for better services. Best choice ever</p>
+                  <button class="signup-btn" onclick="openSignupForm()">Sign Up </button>
+               </div>
+           </section>
+
+           <section id="about" class="section" style="background-color: #e6e6e6;">
+               <div class="content" >
+                 <h2>About Us</h2>
+                 <p>Welcome to Best Choice Web Design, a full-service web design and development agency based in the heart of the city. We specialize in creating beautiful, functional, and responsive websites that help our clients achieve their business goals.
+
+                   Our team of experienced designers, developers, and marketers are passionate about all things web design and are committed to delivering exceptional results for our clients. With years of experience in the industry, we have a proven track record of success and have worked with a wide range of clients across various industries, from small startups to large corporations.
+                
+                   At Best Choice Web Design, we believe that good web design is not just about creating a pretty website, but it's about creating a website that works for you and your business. That's why we take the time to understand your business needs, target audience, and goals before we begin any project. We work closely with our clients to ensure that we create a website that not only looks great but also functions seamlessly and delivers results.
+                
+                    Our services include website design, website development, website maintenance, and website optimization. We also offer graphic design, branding, and digital marketing services to help our clients build a strong online presence and achieve their business objectives.
+                
+                    At Best Choice Web Design, we are dedicated to providing our clients with the highest level of customer service and support. We work closely with our clients throughout the entire process, from concept to launch, to ensure that they are satisfied with the end result.
+                
+                   Thank you for considering Best Choice Web Design for your web design and development needs. We look forward to working with you to create a website that exceeds your expectations and helps you achieve your business goals.</p>
+                </div>
+           </section>
+
+           <section id="services" class="section" style="background-color: #d9d9d9;">
+                <div class="content">
+                 <h2>Our Services</h2>
+                 <ul>
+                     <li>Web Design</li>
+                     <li>Web development</li>
+                     <li>Web maintainance</li>
+                     <li>Web optimization</li>
+                   </ul>
+              </div>
+          </section>
+
+          <section id="contact" class="section" style="background-color: #cccccc;">
+              <div class="content">
+                  <h2>Contact Us</h2>
+                    <form>
+                       <label for="name">Name:</label>
+                       <input type="text" id="name" name="name">
+                       <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                       <label for="message">Message:</label>
+                       <textarea id="message" name="message"></textarea>
+                      <button type="submit">Send</button>
+                   </form>
+               </div>
+           </section>
+       </main>
+
+      <div class="modal" id="signup-modal">
+            <div class="modal-content">
+               <span class="close" onclick="closeSignupForm()">&times;</span>
+               <h2>Sign Up</h2>
+                <form>
+                 <label for="username">Username:</label>
+                 <input type="text" id="username" name="username">
+                 <label for="email">Email:</label>
+                 <label for="password">Password:</label>
+                 <input type="password" id="password" name="password">
+                 <button type="submit">Sign Up</button>
+               </form>
+           </div>
+        </div>
+
+        <div class="embed" id="login-form">
+            <h2>Log In</h2>
+          <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="password">Password:</label>
+               <input type="password" id="password" name="password">
+               <button type="submit">Log In</button>
+            </form>
+        </div>
+
+       <script>
+            const signupModal = document.getElementById("signup-modal");
+           const loginForm = document.getElementById("login-form");
+
+           function openSignupForm() 
+             {
+             signupModal.style.display = "block";
+             }
+           function closeSignupForm()
+             {
+             signupModal.style.display = "none";
+             }
+
+              window.onclick = function(event)
+             {
+          if (event.target == signupModal) 
+              { 
+              signupModal.style.display = "none";
+              }
+            }
+
+         loginForm.style.display = "block";
+      </script>
+   </body>
+</html>
